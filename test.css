@@ -1,0 +1,97 @@
+/* 1. СБРОС И ФОН */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F6D8C6; /* Тот самый бежевый/персиковый фон */
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #333;
+}
+
+/* 2. КОНТЕЙНЕР */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 3. ГЛАВНЫЙ СЕКЦИОННЫЙ БЛОК (Разделение на 2 колонки) */
+.hero {
+  padding: 80px 0;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;        /* Выравнивание по вертикали */
+  justify-content: space-between;
+  gap: 60px;                  /* Отступ между левым текстом и макетом справа */
+}
+
+/* 4. ЛЕВАЯ КОЛОНКА С ТЕКСТОМ */
+.hero-content {
+  flex: 1;
+  max-width: 480px;           /* Чтобы текст не растягивался во всю ширину */
+}
+
+.text {
+  color: #B88E2F;             /* Золотистый цвет */
+  font-size: 72px;
+  font-weight: 900;
+  text-transform: uppercase;  /* ВСЕ БУКВЫ ЗАГЛАВНЫЕ */
+  line-height: 0.95;
+  letter-spacing: 2px;
+}
+
+.text2 {
+  color: #B88E2F;
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+.text3 {
+  color: #333333;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Ссылки снизу слева */
+.listf {
+  list-style: none;
+}
+
+.listf li {
+  margin-bottom: 12px;
+}
+
+.listf a {
+  color: #333333;
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.listf a:hover {
+  color: #B88E2F;
+}
+
+/* 5. ПРАВАЯ КОЛОНКА С КАРТИНКОЙ МАКЕТА */
+.hero-banner {
+  flex: 1.2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-bg-img {
+  width: 100%;
+  max-width: 650px;           /* Размер картинки макета */
+  height: auto;
+  display: block;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15); /* Мягкая тень под макетом */
+  border-radius: 4px;
+}
